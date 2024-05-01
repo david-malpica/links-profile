@@ -1,0 +1,112 @@
+@font-face {
+   font-family: "Inter";
+   src: 
+      url("fonts/Inter-Bold.ttf") format("truetype")
+      url("fonts/Inter-Regular.ttf") format("truetype")
+      url("fonts/Inter-SemiBold.ttf") format("truetype");
+   font-style: normal;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Inter", sans-serif;
+}
+
+:root {
+   --green: hsl(75, 94%, 57%);
+   --white: hsl(0, 0%, 100%);
+   --grey: hsl(0, 0%, 20%);
+   --dark-grey: hsl(0, 0%, 12%);
+   --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+   background-color: var(--off-black);
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card {
+   width: 320px;
+   height: auto;
+   background-color: var(--dark-grey);
+   padding: 15px;
+   margin: 120px 0;
+   text-align: center;
+   border-radius: 20px;
+}
+
+.card__img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+.card__title {
+   margin-top: 20px;
+   color: var(--white);
+   font-weight: 700;
+}
+
+.card__span {
+   display: block;
+   margin: 10px 0;
+   color: var(--green);
+   font-weight: 600;
+   font-size: 14px;
+}
+
+.card__paragraph {
+   margin-top: 25px;
+   margin-bottom: 15px;
+   color: var(--white);
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.card__nav--item {
+   display: block;
+   margin: 15px;
+}
+
+.card__nav--btn {
+   width: 260px;
+   height: 40px;
+   background-color: var(--grey);
+   border: none;
+   border-radius: 10px;
+   color: var(--white);
+   font-weight: 600;
+}
+
+.card__nav--btn:hover {
+   cursor: pointer;
+   background-color: var(--green);
+   color: var(--grey);
+}
+
+.footer__span {
+   display: block;
+   text-align: center;
+   color: var(--white);
+   margin: 10px;
+}
+
+.footer__span a {
+   color: var(--green);
+}
+
